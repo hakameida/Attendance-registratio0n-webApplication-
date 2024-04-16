@@ -1,0 +1,26 @@
+{% extends 'main.html' %}
+{% block content %}  
+{% load static %}
+<div class="content">
+  <div class="out-sec1">
+    <div class="sec">
+      <form action="{% url 'login' %}" method="post">
+        {% csrf_token %}
+        <h1>Login</h1>
+        <div class="inf">
+          <div>
+            <input type="text" name="username" id="" placeholder="User Name" />
+          </div>
+          <div>
+            <input type="password" name="password" placeholder="Password" />
+          </div>
+          <div>
+            <input type="submit" class="sendbtn" value="Submit" id="">
+            <!-- <button class="submit"><a href="">Submit</a></button> -->
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

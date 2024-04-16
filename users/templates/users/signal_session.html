@@ -1,0 +1,33 @@
+{% extends 'main.html' %} 
+{% load static %}
+{% block content %} 
+<div class="content">
+  <div class="out-sec1">
+    <div class="sec">
+      <h1>Session Information</h1>
+      <div class="t">Name :</div>
+      <div class="ti">{{ session.session_name }}</div>
+      <div class="t">Content :</div>
+      <div class="ti">
+        {{ session.session_content }}
+      </div>
+      {% if session.session_file %}
+      <div class="link"><a href="{{ session.session_file.url }}">Download File</a></div>
+      {% endif %}
+      {% if request.user.profile.super %}
+      <div class="image-box">
+        {% if session.image_self %}
+        <a  href="{{ session.image_self.url }}">Taken photo</a>
+        {% endif %} 
+        <div class="at">Attendent students :</div>
+        <ol>
+          {% for profile in session.profile.all %}
+          <li>{{ profile.user.username }}</li>
+          {% endfor %}
+        </ol>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "main.html" %}
+{% load static %}
+{% block content %}  
+  <div class="content">
+    <div class="out-sec1">
+      <div class="sec">
+          <button class="btn"><a href="{% url 'add_session'  %}">Add Session</a></button>
+          <hr>
+          <h1>Sessions</h1>
+          <table>
+              <thead>
+                  <td>Session name</td>
+                  <td>Update Session</td>
+                  <td>Delete Session</td>
+                  <td>View Session</td>
+              </thead>
+              {% for session in sessions %}
+              <tr>
+                <td>{{session.session_name}}</td>
+                <td>
+                  <a href="{% url 'update_session' session.id %}" class="ed">Edit</a>
+                  <a href="{% url 'update_session' session.id %}"><i class="fa fa-edit edi"></i></a>
+                </td>
+                <td>
+                  <a href="{% url 'delete_session' session.id %}" class="del">Delete</a>
+                  <a href="{% url 'delete_session' session.id %}"><i class="fa fa-trash deli"></i></a>
+                </td>
+                <td>
+                  <a href="{% url 'signal_session' session.id %}" class="vw">View</a>
+                  <a href="{% url 'signal_session' session.id %}"><i class="fa fa-eye vwi"></i></a>
+                </td>
+              </tr>
+              {% endfor  %}
+          </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}

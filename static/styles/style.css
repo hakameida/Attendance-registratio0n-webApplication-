@@ -1,0 +1,1280 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Start index page styling */
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(52 129 157 / 40%);
+    position: relative;
+    border-bottom: 1px solid  #fff;
+    padding: 10px 0;
+}
+
+header .logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0px 15px 20px 40px;
+}
+
+header img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+header .nav-bar{
+    padding-right: 40px;
+    margin: auto 40px;
+}
+
+header .nav-bar a{
+    text-decoration: none;
+    color: #03434f;
+    margin-right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    padding: 38px 0;
+}
+
+header .nav-bar a:hover{
+    font-size: 27px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: .3s;
+}
+
+header i{
+    position: absolute;
+    font-size: 30px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 25px;
+    margin-top: 2px;
+    visibility: hidden;
+    color: #03434f;
+    cursor: pointer;
+}
+
+header ul{
+    width: 200px;
+    background-color: #b0cedb;
+    z-index: 3;
+    position: absolute;
+    right: 24px;
+    top: 100px; 
+    display: none;
+}
+
+header ul li{
+    list-style: none;
+    border-bottom: 1px solid ;
+    padding: 10px;
+    font-size: 18px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #03434f;
+}
+
+@media (max-width: 980px){
+    header .nav-bar{
+        display: none;
+    }
+    header i{
+        visibility: visible;
+        font-size: 60px;
+    }
+    header ul{
+        width: 70%;
+        top: 99px;
+    }
+    header img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        
+    }
+    header ul li{
+        padding: 20px ;
+    }
+    header ul li a{
+        padding: 16px 32% 16px 0px;
+        font-size: 40px;
+    }
+}
+
+.content{
+    width: 100%;
+    position: relative; 
+    padding: 60px 0 100px;
+}
+
+.content .out-sec3{
+    padding: 97px 0;
+    /* height: 1vh; */
+
+}
+
+.content .sec1{
+    color: #03444fec;
+    width: 80%;
+    font-size: 60px;
+    font-weight: bold;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.content .sec1 div{
+    margin: 100px 0 0;
+}
+
+@media(max-width: 767px){
+    .content .sec1{
+        font-size: 40px;
+    }
+    
+}
+
+/* End index page styling */
+
+
+/* Start log in page styling */
+.sec{
+    width: 80%;
+    margin: auto ;
+    background-color: rgb(18 133 175 / 11%);
+    border-radius: 80px 0;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.content .sec h1{
+    font-size: 60px;
+    color: #03444fec;
+    text-align: center;
+}
+
+.content .sec .inf{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.content .sec .inf div{
+    margin: 20px 0;
+}
+
+.content .sec .inf div input[type="text"],
+.content .sec .inf div input[type="password"]{
+    background-color: rgb(18 133 175 / 0%);
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #03444fec;
+    height: 60px;
+    font-size: 20px;
+    color: #03444fec;
+
+}
+
+.content .sec .inf div input[type="text"]:focus,
+.content .sec .inf div input[type="password"]:focus{
+    outline: none;
+}
+
+.content .sec .inf div input[type="text"]::placeholder,
+.content .sec .inf div input[type="password"]::placeholder{
+    color: #03444fec;
+    position: absolute;
+    bottom: 15px;
+} 
+
+.content .sec .inf div input[type="text"]:focus::placeholder,
+.content .sec .inf div input[type="password"]:focus::placeholder{
+    color: #03444f69;
+    transition: 0.2s;
+    bottom: 40px;
+} 
+.content .sec .inf div .sendbtn{
+    background-color: rgb(52 129 157 / 40%);
+    color: #02272e;
+    border: none;
+    border-radius: 20px;
+    font-size: 35px;
+}
+
+/* .content .sec .inf div .submit{
+    border-radius:12px;
+    border: none;
+    margin: 50px 0 40px;
+} */
+
+/* .content .sec .inf div .submit a{
+    text-decoration: none;
+    background-color: rgb(52 129 157 / 40%);
+    color: #02272e;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-size: 32px;
+    text-transform: uppercase;
+} */
+.content .sec .inf .log-ans{
+    color: #02272e;
+    font-size: 24px;
+}
+@media(min-width: 768px) and (max-width: 992px){
+    .content .sec h1{
+        font-size: 85px;
+    }
+    .content .sec .inf div input[type="text"]::placeholder,
+    .content .sec .inf div input[type="password"]::placeholder{
+        font-size: 40px;
+        bottom: 30px;
+    }
+    .content .sec .inf div{
+        margin: 100px 0;
+    }
+    .content .sec .inf div input[type="text"],
+    .content .sec .inf div input[type="password"]{
+        height: 77px;
+        font-size: 50px;
+    }
+    .content .sec .inf div .submit a{
+        font-size: 55px;
+        padding: 20px 30px;
+    }
+}
+
+/* End log in page styling */
+
+/* Start about page styling */
+.in-sec{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin: 30px 0;
+}
+
+.in-sec h2{
+    font-size: 35px;
+    color: #03434fe0;
+}
+
+.about-info{
+    direction: rtl;
+}
+
+.about-info ul{
+    padding: 40px;
+    font-size: 22px;
+    line-height: 1.7;
+    color: #03434fe0;
+}
+
+.about-image img{
+    width: 300px;
+    height: 300px;
+}
+@media(max-width: 767px){
+    .in-sec{
+        display: block;
+    }
+    .about-image img{
+        width: 90%;
+        margin-left: 2%;
+    }
+    .in-sec h2{
+        font-size: 25px;
+        margin-right: 30px;
+        margin-bottom: -25px;
+        
+    }
+    .about-info ul{
+        font-size: 20px;
+        margin-right: 35px;
+    }
+}
+@media(min-width: 768px) and (max-width: 992px){
+    .in-sec{
+        display: block;
+    }
+    .about-image img{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .in-sec h2{
+        font-size: 45px;
+        margin-right: 75px;
+    }
+    .about-info ul{
+        font-size: 40px;
+        margin-right: 100px;
+    }
+    .about-image img{
+        width: 60%;
+    }
+}
+/* End about page styling */
+
+/* Start profile styling */
+.sec .profile-img{
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+    margin: 10px 0 25px;
+    max-width: 80%;
+    max-height: 15%;
+}
+.sec .profile-info{
+    color: #03434fe0;
+    position: relative;
+    font-size: 28px;
+    margin-left: 20px;
+}
+
+.sec .profile-info .inf {
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+.sec .profile-info .inf p{
+    font-size: 28px;
+    /* width: 90%; */
+    overflow-wrap: break-word;
+}
+@media(max-width: 767px){
+    .sec .profile-info .inf p{
+        font-size: 22px;
+        margin-top: -20px;
+    }
+}
+@media(min-width: 768px) and (max-width: 991px){
+    .sec .profile-info .inf h3{
+        font-size: 50px;
+    }
+    .sec .profile-info .inf p{
+        font-size: 35px;
+        margin-top: -20px;
+    }
+}
+
+/* End profile styling */
+
+/* Start sessions styling */
+.wl{
+    text-align: center;
+    font-size: 40px;
+    color: #03444fec;
+    margin-bottom: 20px;
+}
+
+.sec h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #03434fe0;
+}
+
+.sec .attended{
+    text-align: center;
+    color: #03434fe0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content .sec .attended div{
+    font-size: 22px;
+    /* margin-bottom: 15px; */
+}
+
+.sec .total-sess{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-size: 22px;
+    color: #03434fe0;
+    text-align: center;
+}
+
+.sec .total-sess a{
+    text-decoration: none;
+    padding:  10px;
+    border-radius: 12px;
+    background-color: rgb(52 129 157 / 40%);
+    color: #02272e;
+    font-size: 22px;
+    margin:-10px 0 -10px -45px;
+    /* margin-top: -10px; */
+}
+
+.sec .total-sess a:hover{
+    font-size: 25px;
+    transition: .3s;
+}
+
+.content .sec .rate{
+    font-size: 30px;
+    text-align: center;
+    color: #03434fe0;
+}
+@media(max-width: 767px){
+    /* .out-sec1 {
+        margin-top: -70px;
+    } */
+    /* .out-sec1 .wl{
+        font-size: 26px;
+    } */
+    /* .sec{
+        margin-top: -11px;
+    } */
+    .sec .attended,
+    .sec .total-sess{
+        display: block;
+    }
+    .content .sec .attended div,
+    .content .sec .total-sess div,
+    .content .sec .rate,
+    .sec .total-sess a
+    {
+        font-size: 30px;
+    }
+    .sec .total-sess div{
+        margin-top: 40px;
+    }
+}
+@media(min-width: 768px) and (max-width: 992px){
+    .sec .attended,
+    .sec .total-sess{
+        display: block;
+    }
+    .content .sec .attended div,
+    .content .sec .total-sess div,
+    .content .sec .rate,
+    .sec .total-sess a
+    {
+        font-size: 35px;
+    }
+    .sec .total-sess div{
+        margin-top: 50px;
+    }
+    .sec .total-sess div{
+        padding: 10px;
+    }
+}
+@media(min-width: 992px) and (max-width: 1199px){
+    .sec .total-sess div a {
+        /* line-height: 1; */
+        padding: 10px;
+    }
+}
+
+
+
+/* End sessions styling */
+
+/* Start stu-view and sup-view styling */ 
+.content .sec .t{
+    font-size: 35px;
+    color: #03434fe0;
+    margin-left: 20px;
+}
+
+.content .sec .ti{
+    font-size: 27px;
+    margin: 25px 40px;
+    color: #03434fb8;
+}
+
+.content .sec .link{
+    margin: 50px 0;
+    text-align: center;
+}
+
+.content .sec .link a,
+.content .sec .image-box a{
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: rgb(52 129 157 / 40%);
+    color: #02272e;
+    border-radius: 20px;
+    font-size: 28px;
+    position: relative;
+    /* text-transform: uppercase; */
+}
+
+.content .sec .image-box{
+    text-align: center;
+}
+
+.content .sec .image-box img{
+   margin: 20px 0;
+   max-width: 80%;
+   max-height: 700px;
+}
+
+.sec .image-box .at{
+    font-size: 35px;
+    color: #03434fe0;
+    margin-top: 50px;
+}
+
+.sec .image-box ol li{
+    color: #03434fb8;
+    text-align: left;
+    margin: 10px 30px;
+    font-size: 22px;
+}
+@media(max-width: 767px){
+    .content  .out-sec1 .sec h1{
+        font-size: 40px;
+    }
+    .content .sec .t,
+    .sec .image-box .at{
+        font-size: 30px;
+    }
+    .content .sec .ti,
+    .sec .image-box ol li{
+        font-size: 22px;
+    }
+    .content .sec .link a,
+    .content .sec .image-box a{
+        font-size: 23px;
+    }
+}
+@media(min-width: 768px) and (max-width: 992px){
+    .content  .out-sec1 .sec h1{
+        font-size: 50px;
+    }
+    .content .sec .t,
+    .sec .image-box .at{
+        font-size: 45px;
+    }
+    .content .sec .ti,
+    .sec .image-box ol li{
+        font-size: 35px;
+    }
+    .content .sec .link a,
+    .content .sec .image-box a{
+        font-size: 35px;
+    }
+}
+
+/* End stu-view and sup-view styling */
+
+/* Start contact styling */
+.content .sec .sup-list{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 150px;
+}
+
+.content .sec .sup-list .sup{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+.content .sec .sup-list .sup a{
+    margin-bottom: 20px;
+}
+
+.sec .sup-list p{
+    color: #03434fe0;
+}
+
+.sec .sup-list a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(52 129 157 / 40%);
+    color: #02272e;
+    border-radius: 10px;
+    float: right;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+@media(max-width: 390px){
+    .content .sec .sup-list {
+        margin-left: -30px;
+    }
+    .content .sec .sup-list .sup {
+        display: block;
+        padding-bottom: 60px;
+        text-align: center;
+        /* margin-right: -60px; */
+    }
+    .sec .sup-list a{
+        font-size: 22px;
+        padding: 5px 10px;
+        margin-right: -120px;
+        
+    }
+    .content .sec .sup-list p{
+        text-align: center;
+        font-size: 24px;
+        margin: 20px 1px;
+    }
+    .content .out-sec1 .sec h1{
+        font-size: 30px;
+        /* margin-top: -25px; */
+    }
+}
+@media (min-width: 391px) and (max-width: 540px){
+    .content .sec .sup-list {
+        margin-left: -30px;
+    }
+    .content .sec .sup-list .sup {
+        display: block;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+    .sec .sup-list a{
+        font-size: 28px;
+        padding: 5px 10px;
+        margin-right: -75px;
+        
+    }
+    .content .sec .sup-list p{
+        text-align: center;
+        font-size: 28px;
+        margin: 20px 1px;
+    }
+    .content .out-sec1 .sec h1{
+        font-size: 35px;
+    }
+}
+@media (min-width: 541px) and (max-width: 1280px){
+    .sec .sup-list a{
+        font-size: 27px;
+    }
+    .sec .sup-list p{
+        font-size: 32px;
+    }
+}
+
+
+/* End contact styling */
+
+/* Start chat styling */
+.msg label{
+    font-size: 28px;
+    margin: 20px;
+    color: #03434f;
+    font-weight: bold;
+}
+
+.msg div{
+    width: 100%;
+    margin: 30px auto;
+}
+
+.msg input[type="text"],
+.msg textarea{
+    width: 97%;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.msg input[type="text"]:focus,
+.msg textarea:focus{
+    outline: none;
+    border: 2px solid rgb(52 129 157 / 40%);
+}
+
+.content .msg .submit input[type="submit"]{
+    padding: 20px;
+    /* width: 120px; */
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(52 129 157 / 40%);
+    color: hsl(190, 92%, 9%);
+    font-size: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.msg .submit{
+    text-align: center;
+}
+.content .msg .msg-conf{
+    text-align: center;
+    font-size: 24px;
+    color: #02272e;
+}
+@media (max-width: 1280px){
+    .msg input[type="text"],
+    .msg textarea{
+        font-size: 26px;
+}
+}
+/* End chat styling */
+
+/* Start sup-session style  */
+.sec .btn{
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
+    background-color: rgb(52 129 157 / 40%);
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.sec .btn a{
+    color: #02272e;
+    text-decoration: none;
+}
+
+.sec  hr{
+    margin: 30px 50px 40px;
+    border-color: rgb(52 129 157 / 40%);
+}
+
+.sec table{
+    border: 1px solid;
+    border-collapse: collapse;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin: 0 150px 0 150px; */
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.sec table thead td{
+    font-size: 25px;
+    color: #03434fe0;
+    padding: 20px;
+}
+
+.sec table td{
+    border: 1px solid;
+    padding: 20px 45px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #03434fe0;
+}
+
+.sec table td i{
+    display: none;
+}
+
+.sec table td a{
+    text-decoration: none;
+}
+
+.content .sec table td .del,
+.content .sec table td .ed,
+.content .sec table td .vw{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.content .sec table td .del,
+.content .sec table td .deli{
+    color: #890b0b;
+}
+
+.content .sec table td .vw,
+.content .sec table td .vwi{
+    color: #16075a;
+}
+
+.content .sec table td .ed,
+.content .sec table td .edi{
+    color: rgb(6, 77, 6);
+}
+@media(max-width: 375px){
+    .sec .btn{
+        font-size: 20px;
+    }
+    .content .sec table{
+        width: 90%;
+        padding: 0 100px;
+    }
+    .content .sec table thead td{
+        font-size: 14px;
+        
+    } 
+    .content .sec table td{
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .content .sec table td .del,
+    .content .sec table td .ed,
+    .content .sec table td .vw{
+        display: none;
+        padding: 0;
+    }
+    .sec table td i{
+        display: block;
+    }
+}
+@media(min-width: 376px) and (max-width: 767px){
+    .sec .btn{
+        font-size: 30px;
+    }
+    .content .sec table{
+        width: 90%;
+        padding: 0 100px;
+    }
+    .content .sec table thead td{
+        font-size: 20px;
+        
+    } 
+    .content .sec table td{
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .content .sec table td .del,
+    .content .sec table td .ed,
+    .content .sec table td .vw{
+        display: none;
+        padding: 0;
+    }
+    .sec table td i{
+        display: block;
+    }
+}
+    @media(min-width: 768px) and (max-width: 992px){
+        .sec .btn{
+            font-size: 40px;
+        }
+        .content .sec table{
+            width: 90%;
+            padding: 0 100px;
+        }
+        .content .sec table thead td{
+            font-size: 32px;
+            
+        } 
+        .content .sec table td{
+            padding: 10px;
+            font-size: 32px;
+            text-align: center;
+        }
+        .content .sec table td .del,
+        .content .sec table td .ed,
+        .content .sec table td .vw{
+            display: none;
+            padding: 0;
+        }
+        .sec table td i{
+            display: block;
+        }
+    }
+    @media(min-width: 993px) and (max-width: 1280px){
+        .sec .btn{
+            font-size: 50px;
+        }
+        .content .sec table{
+            width: 90%;
+            padding: 0 100px;
+        }
+        .content .sec table thead td{
+            font-size: 38px;
+            
+        } 
+        .content .sec table td{
+            padding: 10px;
+            font-size: 38px;
+            text-align: center;
+        }
+        .content .sec table td .del,
+        .content .sec table td .ed,
+        .content .sec table td .vw{
+            /* display: none; */
+            font-size: 30px;
+            padding: 0;
+        }
+    }
+/* End sup-session style  */
+
+
+/* Start edite-update-sess style */
+.sec label{
+    display: block;
+    margin: 13px;
+}
+
+.sec input{
+    width: 75%;
+}
+
+.sec .label{
+    font-size: 20px;
+}
+
+.sec input:focus{
+    outline: none;
+}
+
+.sec a{
+    text-decoration: none;
+}
+
+.content .sec .session input[type="submit"]{
+    background-color: rgb(52 129 157 / 40%);
+    color: #02272e;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    /* width: 200px; */
+    text-transform: uppercase;
+}
+.cur{
+    overflow-wrap: break-word;
+}
+.cl{
+    display: inline;
+}
+.cl label,
+.cl input{
+    display: inline;
+    margin-left: -104px;
+    font-size: 25px;
+    
+}
+.ch{
+    margin: 20px 0px;
+
+}
+.ch label,
+.ch input{
+    display: inline;
+    /* margin-left: -104px; */
+    font-size: 22px;
+    margin-top: 10px;
+
+}
+
+
+@media(max-width: 767px){
+    .content .out-sec1 .sec form h1{
+        font-size: 50px;
+    }
+    .content .sec input{
+        font-size: 22px;
+    }
+    .content .sec input[type="submit"]{
+        font-size: 40px;
+        padding: 10px 20px;
+        width: 150px;
+    }
+    .sec .label,
+    .sec .label a{
+        font-size: 25px;
+    }
+}
+@media(min-width: 768px){
+    .content .out-sec1 .sec form h1{
+        font-size: 70px;
+    }
+    .content .sec input{
+        font-size: 38px;
+    }
+    .content .sec input[type="submit"]{
+        font-size: 55px;
+        padding: 10px 20px;
+        width: 160px;
+    }
+    .sec .label,
+    .sec .label a{
+        font-size: 38px;
+    }
+}
+/* End edite-update-sess style */
+
+/* Start delete-sess style */
+.out-sec{
+    padding: 120px 0;
+}
+
+.sec .del-question{
+    text-align: center;
+    font-size: 28px;
+    color: #03434fe0;
+}
+
+.del-ans{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sec form .del-ans .conf,
+.back{
+    padding: 15px;
+    background-color: rgb(52 129 157 / 40%);
+    color: #02272e;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 150px;
+}
+
+.sec .conf{
+    margin-left: 50px;
+    background-color: rgb(52 129 157 / 40%);
+    color: #02272e;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 150px;
+}
+.content .sec form .del-ans .back{
+    text-decoration: none;
+    padding: 15px 27px;
+    color: #02272e;
+    background-color: rgb(52 129 157 / 40%);
+    color: #02272e;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 150px;
+}
+.sec form .del-ans .back a{
+    color: #02272e;
+    /* background-color: rgb(52 129 157 / 40%); */
+}
+@media(max-width: 375px){
+    .sec .conf{
+        margin: 40px 0 0 0px;
+        text-align: center;
+    }
+}
+@media(min-width: 376px) and (max-width: 540px){
+    .sec .conf{
+        margin: 0 auto;
+    }
+}
+@media(min-width: 541px) and (max-width: 992px){
+    .sec form .del-ans .conf,
+    .back{
+        font-size: 30px;
+    }
+    .sec form .del-ans .conf{
+        width: 180px;
+
+    }
+}
+/* End delete-sess style */
+
+/* Start inbox styling */
+.content a {
+    text-decoration: none;
+}
+
+.content .message-from{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content a .message,
+.content a .unread-message{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 22px;
+    color: #03434fb8;
+    margin: 30px;
+}
+
+.content a .unread-message{
+    background-color: rgb(18 133 175 / 13%);;
+}
+
+.content a .message .message-from div,
+.content a .unread-message .message-from div{
+    margin-bottom: 20px;
+    font-weight: bold;   
+    color: #03434fe0;
+}
+@media(max-width: 767px){
+    .content .out-sec1 .sec h1{
+        font-size: 26px;
+    }
+    .content .message-from{
+        display: block;
+    }
+    .content a .message div,
+    .content a .unread-message div{
+        font-size: 20px;   
+    }
+    .content a .message-from div{
+        font-size: 18px;
+    }
+}
+
+/* End inbox styling */
+
+
+/* Start message styling */
+.msg-info{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 8px;
+    color: #03434fe0;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.content .sec div{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.content .sec .msg-info .sender div{
+    font-weight: bold;
+}
+
+.content .sec .text{
+    border: 1px solid #03434fe0;
+    padding: 20px;
+    word-wrap: break-word;
+    line-height: 1.6;
+    border-radius: 10px;
+    color: #03434fb8;
+    margin-top: 20px;
+    background-color: #fff;
+}
+@media(max-width: 767px){
+    .msg-info{
+        display: block;
+    }
+    .content .sec .msg-info .sender div{
+        font-size: 30px;
+    }
+    .content .sec .text{
+        font-size: 22px;
+    }
+} 
+@media(min-width: 768px) and (max-width: 992px){
+    .content .sec .msg-info div{
+        font-size: 28px;
+    }
+    .content .sec .msg-info .sender div{
+        font-size: 38px;
+    }
+    .content .sec .text{
+        font-size: 32px;
+    }
+}
+
+
+/* End message styling */
+
+.messages .logmsg{
+    text-align: center;
+    background-color: green;
+}
+
+
+.user-info{
+    padding: 0 30px;
+}
+.content .out-sec1 .sec .user-info .create{
+    /* padding: 10px 15px; */
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(52 129 157 / 40%);
+    color: #02272e;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    margin: 20px 0;
+    padding: 15px 20px;
+    width: 300px;
+}
+.check{
+    display: inline;
+    
+}
+.check input{
+    position: relative;
+     right: 250px;
+     display: inline;
+}
+.check .ch-label{
+    display: inline;
+    position: relative;
+    left: -520px;
+
+}
+.content .file{
+    font-size: 0px;
+}
+
+@media(max-width: 767px){
+    .check input{
+        position: relative;
+         left: -90px;
+         display: inline;
+    }
+    .check .ch-label{
+        display: inline;
+        position: relative;
+        left: 40px;
+        top: -20px;
+    
+    }
+}
+
+
+.resmsg{
+    width: 700px;
+    background-color: white;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 20px;
+}
+#image_self-clear_id{
+    margin-left: -100px;
+    /* display: inline; */
+    position: relative;
+    margin-left: -416px;
+    top: 32px;
+    right: 364px;
+
+}
+#session_file-clear_id{
+
+    margin-left: -100px;
+    /* display: inline; */
+    position: relative;
+    margin-left: -416px;
+    top: 35px;
+    right: 682px;
+
+}

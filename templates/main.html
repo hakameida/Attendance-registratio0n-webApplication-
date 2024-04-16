@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/all.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/normalize.css' %}" />
+    <title>Received message</title>
+</head>
+  <body>
+        {% include 'nav.html' %}
+        {% if messages %}
+        <ul class="messages">
+          {% for message in messages %}
+          <div class="resmsg" {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</div>
+          {% endfor %}
+        </ul>
+        {% endif %}
+          {% block content %}
+          {% endblock %} 
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+{% extends 'main.html' %} 
+{% block content %} 
+<div class="content">
+  <div class="out-sec1">
+    <h1 class="wl">Welcome ,{{ profile_name }}!</h1>
+    <div class="sec">
+      <h3>Attended sessions number : {{ sessionsme }}</h3>
+      <div class="attended">
+        {% for session in sessions %}
+        <div>{{ session }}</div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="sec">
+        <h3>Total sessions number : {{ sessionsall }}</h3>
+        <div class="total-sess">
+          {% for sessione in sessionss %}
+          <div>{{ sessione }} </div><a href="{% url 'signal_session' sessione.id %}">view</a>
+          {% endfor %}
+        </div>
+    </div>
+    <div class="sec">
+      <h3>Attendance Rate</h3>
+      <div class="rate">{{attendance}}%</div>
+    </div>
+  </div>
+{% endblock %}

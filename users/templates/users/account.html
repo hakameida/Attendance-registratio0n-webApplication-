@@ -1,0 +1,25 @@
+{% extends 'main.html' %} 
+{% block content %}
+{% load static %}  
+<div class="content">
+  <div class="out-sec1">
+    <div class="sec">
+      <img class="profile-img" src="{{ Profile.image.url }}" alt="" />
+      <div class="profile-info">
+        <div class="inf">
+          <h3>Name :</h3> 
+          <p>{{Profile.name}}</p> 
+        </div>
+        <div class="inf">
+          <h3>User Name :</h3>
+          <p> {{Profile.username}}</p>
+        </div>
+        <div class="inf">
+          <h3>Email :</h3>
+          <p>{{Profile.email}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+  {% endblock %}

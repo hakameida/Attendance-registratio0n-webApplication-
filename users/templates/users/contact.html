@@ -1,0 +1,20 @@
+{% extends 'main.html' %} 
+{% block content %} 
+<div class="content">
+  <div class="out-sec1">
+    <div class="sec">
+      <h1>Supervisors :</h1>
+      <div class="sup-list">
+        {% for profile in profiles %}
+            {% if profile.super %}
+               <div class="sup">
+                  <p>{{ profile.name }} </p>
+                  <a href="{% url 'create-message' profile.id %}">Contact</a>
+               </div>
+            {% endif %}
+        {% endfor %}  
+       </div>
+    </div>
+  </div>
+</div>   
+{% endblock %}

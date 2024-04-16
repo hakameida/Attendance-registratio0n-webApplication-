@@ -1,0 +1,55 @@
+{% extends 'main.html' %} 
+{% block content %}
+{% load static %} 
+<!-- <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{user_form.username}}
+    {{ user_form.as_p }}
+    
+    {{ profile_form.as_p }}
+    
+    <button type="submit">Create Profile</button>
+  </form> -->
+  <div class="content">
+    <div class="out-sec1">
+        <div class="sec">
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <h1>Add user</h1>
+                <div class="user-info">
+                    <div>
+                        <label for="">User name:</label>
+                        {{user_form.username}}
+                    </div>
+                    <div>
+                        <label for="">Password</label>
+                        {{user_form.password}}
+                    </div>
+                    <div>
+                        <label for="">Email address</label>
+                        {{user_form.email}}
+                    </div>
+                    <div>
+                        <label for="">First name</label>
+                        {{profile_form.firstname}}
+                    </div>
+                    <div class="check ">
+                        <label class="ch-label" for="">Supervisor</label>
+                        {{profile_form.super}}
+                    </div>
+                    <div>
+                        <label for="">Second name</label>
+                        {{profile_form.secondname}}
+                    </div>
+                    <div>
+                        <label class="file" for="">Image</label>
+                        {{profile_form.image}}
+                    </div>
+                    <input type="submit" class="create" value="Create Profile">
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+  
+{% endblock %}

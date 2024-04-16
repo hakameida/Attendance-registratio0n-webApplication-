@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Start main page styling */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 130px;
+    background-color: rgb(149, 0, 255);
+}
+.nav img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 15px;
+
+}
+.nav .nav-bar{
+    margin: 56px 0;
+}
+.nav .nav-bar a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+.content{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.content p{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: green;
+    text-align: center;
+    position: relative;
+    
+}
+.footer p{
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* End main page styling */
+
+
+/* Start log in page styling */
+.login-box {
+	width: 350px;
+	height: 500px;
+	color: #000;
+	border-radius:10px;
+	position: absolute;
+	overflow: hidden;
+	background-color: pink;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.login-box h2 {
+	margin: 90px 0 10px 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+    
+}
+
+.login-box form {
+	box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.user-box {
+	position: relative;
+}
+
+.user-box input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #000;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #000;
+	outline: none;
+	background: transparent;
+}
+
+.user-box label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #000;
+	pointer-events: none;
+	transition: 0.5s;
+}
+
+.user-box input:focus ~ label{
+	top: -20px;
+	left: 0;
+	color: #97898b;
+	font-size: 12px;
+}
+
+button {
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	margin: 30px 0;
+	border-radius: 5px;
+	border: none;
+	background: #a88083;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	transition: 0
+}
+/* End log in page styling */
+
+
+/* Start chat styling */
+
+
+
+/* End chat styling */
+
+
+
+/* Start profile styling */
+.content .pro-img{
+    margin-top: 20px;
+    max-width: 300px;
+    max-height: 200px;
+}
+.content .profile-info{
+    width: 80%;
+    height: 330px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: peru;
+    margin-top: 80px;
+}
+.content .profile-info .inf{
+    position: relative;
+    text-align: left;
+    line-height: 2;
+    top: 100px;
+}
+/* End profile styling */
+.session_add {
+    background-color: #4CAF50; /* Set background color */
+    border: none; /* Remove border */
+    color: rgb(255, 255, 255); /* Set text color */
+    padding: 10px 20px; /* Set padding */
+    text-align: center; /* Center align text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display as inline-block */
+    font-size: 16px; /* Set font size */
+    margin-bottom: 10px; /* Add bottom margin */
+  }
+  
+  .session_add:hover {
+    background-color: #3e8e41; /* Change background color on hover */
+  }
+  
+  table {
+    border-collapse: collapse; /* Collapse table borders */
+    width: 100%; /* Set table width to 100% */
+  }
+  
+  th, td {
+    padding: 8px; /* Set cell padding */
+    text-align: left; /* Align cell text to left */
+  }
+  
+  th {
+    background-color: #4CAF50; /* Set header background color */
+    color: white; /* Set header text color */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* Set background color for even rows */
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5; /* Change background color on row hover */
+  }
+  
+  caption {
+    font-size: 24px; /* Set font size for table caption */
+    font-weight: bold; /* Set font weight for table caption */
+    margin-bottom: 10px; /* Add bottom margin to table caption */
+  }

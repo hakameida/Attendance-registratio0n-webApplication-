@@ -1,0 +1,32 @@
+{% extends 'main.html' %} 
+{% block content %} 
+  <div class="content">
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+      <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <div class="out-sec1">
+      <div class="sec">
+          <form action="{% url 'create-message' pk=recipient.id %}" method="post">
+            {% csrf_token %}
+            <div class="msg">
+              <div>
+                <label for="">{{form.subject.label}}:</label>
+                {{form.subject}}
+              </div>
+              <div>
+                <label for="">{{form.body.label}}:</label>
+                {{form.body}}
+              </div>
+              <div class="submit">
+                <input type="submit" value="Send" />
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

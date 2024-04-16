@@ -1,0 +1,17 @@
+{% extends 'main.html' %} 
+{% block content %} 
+<div class="content">
+  <div class="out-sec1">
+    <div class="sec">
+      <form  action="" method="post">
+        {% csrf_token %}
+        <p class="del-question">Are You Sure You Want To Delete "{{ object }}" ?</p>
+        <div class="del-ans">
+           <input type="submit" value="Confirm" class="conf">
+           <button class="back"><a href="{% url 'sessions' %}">Go Back</a></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

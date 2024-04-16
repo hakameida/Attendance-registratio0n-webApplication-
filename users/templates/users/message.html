@@ -1,0 +1,17 @@
+{% extends 'main.html' %} 
+{% block content %} 
+<div class="content">
+  <div class="out-sec1">
+    <div class="sec">
+      <div class="msg-info">
+        <div class="sender">
+          <div>{{message.subject}}</div>
+          <div>{{message.name}}</div>
+        </div>
+        <div>june 21,2023,11:11pm</div>
+      </div>
+        <div class="text">{{message.body|linebreaksbr}}</div>
+    </div>
+  </div>
+</div>
+{% endblock %}
